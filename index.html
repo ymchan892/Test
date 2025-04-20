@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Briefing 每日國際新聞簡報</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="每天早上 8 點寄給你中英對照的 PDF 國際新聞摘要，支援圖表視覺化與行動裝置，無豆腐字。"/>
+  <meta property="og:title" content="Daily Briefing 每日國際新聞簡報"/>
+  <meta property="og:description" content="中英對照、圖表可視化、每日一報，掌握全球時事。"/>
+  <meta property="og:image" content="preview.png"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <style>
+    body { font-family: "Helvetica Neue", "Noto Sans TC", sans-serif; background:#f8f9fa; color:#212529; margin:0; padding:0; }
+    header { background:#0d6efd; color:#fff; padding:2rem 1rem 1rem; text-align:center; position:relative; }
+    header img { position:absolute; top:1rem; left:1rem; height:50px; }
+    header h1 { margin:0.5rem 0; font-size:2.5rem; }
+    header p { font-size:1.2rem; margin-bottom:1rem; }
+    .cta { background:#ffc107; color:#000; padding:0.75rem 1.5rem; font-size:1rem; border:none; border-radius:5px; text-decoration:none; }
+    .section { max-width:800px; margin:2rem auto; padding:0 1rem; }
+    .section h2 { font-size:1.75rem; margin-bottom:1rem; color:#0d6efd; }
+    .features ul { list-style:none; padding:0; }
+    .features li { margin-bottom:1rem; padding-left:1.5rem; position:relative; }
+    .features li::before { content:"✓"; position:absolute; left:0; color:green; }
+    .preview img { width:100%; border:1px solid #ccc; margin-bottom:1rem; }
+    form { display:flex; flex-direction:column; gap:1rem; margin-top:2rem; }
+    input[type="email"] { padding:0.75rem; font-size:1rem; border:1px solid #ccc; border-radius:4px; }
+    button[type="submit"] { padding:0.75rem; font-size:1rem; background:#0d6efd; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+    .footer { text-align:center; font-size:0.9rem; color:#666; margin-top:3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Daily Briefing Logo"/>
+    <h1>Daily Global Briefing</h1>
+    <p>每天早上 8 點，寄給你中英對照的 PDF 國際新聞簡報</p>
+    <a href="#subscribe" class="cta">立即訂閱</a>
+  </header>
+  <div class="section features">
+    <h2>我們的特色</h2>
+    <ul>
+      <li>中英對照摘要，快速掌握全球趨勢</li>
+      <li>使用 Noto Sans TC 字體，無豆腐字</li>
+      <li>每日自動產出 PDF 報告，附帶圖表與連結</li>
+    </ul>
+  </div>
+  <div class="section preview">
+    <h2>PDF 報告封面</h2>
+    <img src="preview.png" alt="PDF Report Cover Preview"/>
+    <p>掌握全球時事趨勢，圖表化呈現。</p>
+  </div>
+  <div class="section" id="subscribe">
+    <h2>訂閱每日簡報</h2>
+    <form action="https://formspree.io/f/xzblyjzv" method="POST">
+      <input type="email" name="email" placeholder="輸入 Email 訂閱每日簡報" required/>
+      <button type="submit">訂閱</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>由 Curtis Chan 開發 | Contact: curtis.php.tw@gmail.com</p>
+    <p>© 2025 Daily Global Briefing</p>
+  </div>
+</body>
+</html>
